@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="./css/reset.css"> 
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="./assets/logo.png" alt="logo de Alura" loading="lazy">
+        </header>
+
+        <main>
+            <section>
+                <div>
+                    <textarea class="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                
+                <div class="info">
+                    <img class="iconoInfo" src="./assets/iconoInfo.svg" alt="icono atención importante" loading="lazy">  
+                    <h6 class="h6">Solo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="botonDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+
+            </section>
+
+            <section>
+
+
+                <div>
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                </div>
+
+
+                <div id="miContenedor" class="contenedorMensaje">
+                    <h3>Ningún mensaje fue <br> encontrado</h3>
+                    <p class="textoDosOpciones">Ingresa el texto que desees encriptar o <br>desencriptar</p>
+                </div>
+
+                
+                <div>
+                    <button class="botonCopiar" onclick="copiarTextoEncriptado()">Copiar</button>
+                </div>
+
+                <div class="contenedorResultado">
+                    <p class="textoResultado"></p>
+                </div>
+
+
+            </section>
+
+        </main>
+
+        <footer>
+            <br>
+            <p class="copyright">&copy Copyright Oracle ONE-Alura Latam | 2023 | Design by <a class="linkWeb" href="https://github.com/lorenzasf">Lorenza SF</a></p>
+            <br>
+        </footer>
+
+        <script src="./js/script.js"></script>
+
+    </body>
+
+
+
+
+</html>
